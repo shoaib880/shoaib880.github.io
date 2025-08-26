@@ -5,17 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shoaib Mahmud — Portfolio</title>
   <meta name="description" content="Portfolio website of Shoaib Mahmud — CSE student, developer-in-training." />
-  <meta property="og:title" content="Shoaib Mahmud — Portfolio" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/shoaib.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="bg-animated"></div>
-
   <header class="container site-header">
     <nav class="nav">
       <a class="brand" href="#top" aria-label="Home">SM</a>
@@ -31,41 +24,11 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
     <section id="top" class="hero">
       <div class="hero-text reveal-left">
         <h1 class="name">Shoaib Mahmud</h1>
-        <p class="typed">
-          <span id="typewriter" aria-label="Intro line"></span>
-          <span class="cursor" aria-hidden="true">|</span>
-        </p>
+        <p class="typed"><span id="typewriter"></span><span class="cursor">|</span></p>
         <p class="tagline">CSE student. Linux explorer. Building things and learning fast.</p>
-        <ul class="hero-socials">
-          <li><a aria-label="Facebook" href="https://www.facebook.com/share/17RALhjYdM/" target="_blank" rel="noopener" class="icon-link facebook" title="Facebook">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3h-1.8v7A10 10 0 0 0 22 12z"/></svg>
-          </a></li>
-          <li><a aria-label="Instagram" href="https://www.instagram.com/shoaibm880/" target="_blank" rel="noopener" class="icon-link instagram" title="Instagram">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm6.2-.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg>
-          </a></li>
-          <li><a aria-label="X" href="https://x.com/shoaibm880" target="_blank" rel="noopener" class="icon-link x" title="X (Twitter)">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M3 3h4.7l5 6.7L18 3h3.7l-6.6 8.6L22 21h-4.7l-5.4-7.1L9 21H5.3l6.6-8.7L3 3z"/></svg>
-          </a></li>
-          <li><a aria-label="Threads" href="https://www.threads.com/@shoaibm880" target="_blank" rel="noopener" class="icon-link threads" title="Threads">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm3.6 12.7c-.4 1.7-1.9 2.9-3.8 2.9-2.3 0-4.1-1.9-4.1-4.2s1.8-4.2 4.1-4.2c1.8 0 3.3 1.1 3.8 2.7-.3-.1-.7-.2-1.1-.2-1.4 0-2.5 1-2.5 2.3s1.1 2.3 2.5 2.3c.5 0 .8-.1 1.1-.3z"/></svg>
-          </a></li>
-          <li><a aria-label="WhatsApp" href="https://wa.me/8801522134051" target="_blank" rel="noopener" class="icon-link whatsapp" title="WhatsApp">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M20 3.5A10 10 0 1 0 4 19.2L3 22l2.9-.9A10 10 0 1 0 20 3.5zM6.4 12a5.6 5.6 0 1 1 11.2 0 5.6 5.6 0 0 1-11.2 0zm8 2.6c-.4.1-1 .2-2-.2-1.8-.7-3-2.3-3.3-2.7-.3-.5-.8-1.1-.8-1.9 0-.9.5-1.3.7-1.3h.5l.4.1c.1 0 .3.1.3.3l.4 1c.1.2.1.3 0 .4l-.2.3-.2.3c-.1.2-.2.4 0 .7.2.3.7 1 1.4 1.6.9.8 1.6 1 1.8 1.1h.4l.3-.1h.3c.2 0 .3.1.4.3l.5 1.1c.1.2 0 .4-.2.5z"/></svg>
-          </a></li>
-          <li><a aria-label="Messenger" href="https://m.me/shoaib911" target="_blank" rel="noopener" class="icon-link messenger" title="Messenger">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M12 2C6.5 2 2 6.1 2 11.1 2 15 4.6 18.3 8.3 19.7v2.3l2.2-1.2c.5.1 1 .1 1.5.1 5.5 0 10-4.1 10-9.1S17.5 2 12 2zm5 10.7L14 11l-3.2 1.9L7 11l4.3 4.6 3.2-1.9 2.5 2v-3z"/></svg>
-          </a></li>
-          <li><a aria-label="LinkedIn" href="https://www.linkedin.com/in/shoaib-mahmud-2383a237a" target="_blank" rel="noopener" class="icon-link linkedin" title="LinkedIn">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M6 9h3v10H6zM7.5 5.5A1.5 1.5 0 1 1 6 7a1.5 1.5 0 0 1 1.5-1.5zM18 9.5c-2 0-3 .9-3.5 1.6V9H11v10h3.5v-5.4c0-1.4.9-2.2 2.2-2.2 1.2 0 1.8.8 1.8 2.2V19H22v-5.8c0-2.8-1.5-3.7-4-3.7z"/></svg>
-          </a></li>
-          <li><a aria-label="GitHub" href="https://github.com/shoaib880" target="_blank" rel="noopener" class="icon-link github" title="GitHub">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M12 .5A12 12 0 0 0 0 12.7c0 5.4 3.4 9.9 8.1 11.5.6.1.8-.3.8-.6v-2.2c-3.3.8-4-1.6-4-1.6-.6-1.6-1.4-2-1.4-2-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.1 0-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.2a11.1 11.1 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.7.1 3 .1 3 .8.8 1.2 1.8 1.2 3.1 0 4.6-2.7 5.6-5.3 5.9.4.4.7 1 .7 2v3c0 .3.2.7.8.6A12 12 0 0 0 24 12.7 12 12 0 0 0 12 .5z"/></svg>
-          </a></li>
-        </ul>
       </div>
       <div class="hero-photo reveal-up">
         <div class="photo-frame">
@@ -74,184 +37,58 @@
       </div>
     </section>
   </header>
-
   <main class="container">
     <section id="about" class="card reveal-right">
       <h2>Career Summary</h2>
       <p>Motivated first‑semester CSE student at Uttara University. Focused on C programming, algorithms and system fundamentals. I like clean architecture, teamwork, and Linux-driven development workflows.</p>
-      <ul class="facts">
-        <li>Jurain, Dhaka-1204</li>
-        <li>Bengali (Native), English (Professional)</li>
-      </ul>
     </section>
-
     <section id="education" class="card reveal-left">
       <h2>Education</h2>
       <div class="timeline">
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <h3>B.Sc. in Computer Science &amp; Engineering</h3>
-            <p class="muted">Uttara University — <em>Expected Graduation: 2029</em></p>
-          </div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <h3>Higher Secondary Certificate (Science) <span class="badge gpa">GPA 5.00/5.00</span></h3>
-            <p class="muted">Bangabandhu Govt. College — 2024</p>
-          </div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <h3>Secondary School Certificate (Science) <span class="badge gpa">GPA 5.00/5.00</span></h3>
-            <p class="muted">Satair High School, Boalmari, Faridpur — 2022</p>
-          </div>
-        </div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-content"><h3>B.Sc. in Computer Science &amp; Engineering</h3><p class="muted">Uttara University — Expected Graduation: 2029</p></div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-content"><h3>HSC (Science) <span class="badge gpa">GPA 5.00/5.00</span></h3><p class="muted">Bangabandhu Govt. College — 2024</p></div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-content"><h3>SSC (Science) <span class="badge gpa">GPA 5.00/5.00</span></h3><p class="muted">Satair High School, Faridpur — 2022</p></div></div>
       </div>
     </section>
-
     <section id="skills" class="card reveal-right">
       <h2>Technical Skills</h2>
       <div class="skill-groups">
-        <div class="skill-group">
-          <h3><span class="emoji">🧠</span> Programming</h3>
-          <div class="badges">
-            <span class="badge pill">C</span>
-            <span class="badge pill">Python</span>
-            <span class="badge pill">HTML</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h3><span class="emoji">🛠️</span> Tools</h3>
-          <div class="badges">
-            <span class="badge pill">Git &amp; GitHub</span>
-            <span class="badge pill">VS Code</span>
-            <span class="badge pill">Android Studio</span>
-            <span class="badge pill">Godot</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h3><span class="emoji">💻</span> Operating Systems</h3>
-          <div class="badges">
-            <span class="badge pill">Ubuntu</span>
-            <span class="badge pill">Fedora</span>
-            <span class="badge pill">Kali</span>
-            <span class="badge pill">Zorin</span>
-            <span class="badge pill">Linux Mint</span>
-            <span class="badge pill">Windows 11</span>
-          </div>
-        </div>
+        <div class="skill-group"><h3>🧠 Programming</h3><div class="badges"><span class="badge pill">C</span><span class="badge pill">Python</span><span class="badge pill">HTML</span></div></div>
+        <div class="skill-group"><h3>🛠️ Tools</h3><div class="badges"><span class="badge pill">Git &amp; GitHub</span><span class="badge pill">VS Code</span><span class="badge pill">Android Studio</span><span class="badge pill">Godot</span></div></div>
+        <div class="skill-group"><h3>💻 Operating Systems</h3><div class="badges"><span class="badge pill">Ubuntu</span><span class="badge pill">Fedora</span><span class="badge pill">Kali</span><span class="badge pill">Zorin</span><span class="badge pill">Linux Mint</span><span class="badge pill">Windows 11</span></div></div>
       </div>
     </section>
-
     <section id="projects" class="reveal-left">
       <h2>Projects</h2>
       <div class="grid projects">
-        <article class="project-card">
-          <div class="pc-head">
-            <div class="pc-icon">🎮</div>
-            <h3>Android-based Game (Team)</h3>
-          </div>
-          <p>Team of four building an Android game. I lead planning and architecture, and implement core mechanics in C.</p>
-          <ul class="pc-meta">
-            <li>Role: Team Lead &amp; Gameplay Programmer</li>
-            <li>Focus: Mechanics, architecture, scope</li>
-          </ul>
-        </article>
-
-        <article class="project-card">
-          <div class="pc-head">
-            <div class="pc-icon">📚</div>
-            <h3>Coursework Foundations</h3>
-          </div>
-          <p>C assignments (data structures &amp; problem solving), math practice (Calculus &amp; Linear Algebra), professional English tasks.</p>
-        </article>
-
-        <article class="project-card">
-          <div class="pc-head">
-            <div class="pc-icon">🤝</div>
-            <h3>ML Club Participation</h3>
-          </div>
-          <p>Member of Uttara University ML Club. Exploring fundamentals, datasets, and starter algorithms with peers.</p>
-        </article>
+        <article class="project-card"><div class="pc-head"><div class="pc-icon">🎮</div><h3>Android-based Game</h3></div><p>Leading a 4-person team to design and code an Android game. Responsible for scope, architecture, and gameplay logic in C.</p></article>
+        <article class="project-card"><div class="pc-head"><div class="pc-icon">📚</div><h3>Coursework Foundations</h3></div><p>C assignments, problem-solving, calculus, linear algebra, English writing projects.</p></article>
+        <article class="project-card"><div class="pc-head"><div class="pc-icon">🤝</div><h3>ML Club</h3></div><p>Active member of Uttara University Machine Learning Club (since Aug 2025).</p></article>
       </div>
     </section>
-
     <section id="contact" class="card reveal-right">
       <h2>Contact</h2>
-      <div class="contact-grid">
-        <div>
-          <p><strong>Email:</strong> <a href="mailto:2252081088@uttara.ac.bd">2252081088@uttara.ac.bd</a></p>
-          <p><strong>Phone:</strong> <a href="tel:+8801522134051">+8801522134051</a></p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shoaib-mahmud-2383a237a" target="_blank" rel="noopener" class="text-link">Open</a></p>
-          <p><strong>GitHub:</strong> <a href="https://github.com/shoaib880" target="_blank" rel="noopener" class="text-link">Open</a></p>
-        </div>
-        <ul class="social-list only-icons">
-          <li><a aria-label="Facebook" href="https://www.facebook.com/share/17RALhjYdM/" target="_blank" rel="noopener" title="Facebook"><span class="sr">Facebook</span><svg viewBox="0 0 24 24" class="icon"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3h-1.8v7A10 10 0 0 0 22 12z"/></svg></a></li>
-          <li><a aria-label="Instagram" href="https://www.instagram.com/shoaibm880/" target="_blank" rel="noopener" title="Instagram"><span class="sr">Instagram</span><svg viewBox="0 0 24 24" class="icon"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm6.2-.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg></a></li>
-          <li><a aria-label="X" href="https://x.com/shoaibm880" target="_blank" rel="noopener" title="X (Twitter)"><span class="sr">X</span><svg viewBox="0 0 24 24" class="icon"><path d="M3 3h4.7l5 6.7L18 3h3.7l-6.6 8.6L22 21h-4.7l-5.4-7.1L9 21H5.3l6.6-8.7L3 3z"/></svg></a></li>
-          <li><a aria-label="Threads" href="https://www.threads.com/@shoaibm880" target="_blank" rel="noopener" title="Threads"><span class="sr">Threads</span><svg viewBox="0 0 24 24" class="icon"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm3.6 12.7c-.4 1.7-1.9 2.9-3.8 2.9-2.3 0-4.1-1.9-4.1-4.2s1.8-4.2 4.1-4.2c1.8 0 3.3 1.1 3.8 2.7-.3-.1-.7-.2-1.1-.2-1.4 0-2.5 1-2.5 2.3s1.1 2.3 2.5 2.3c.5 0 .8-.1 1.1-.3z"/></svg></a></li>
-          <li><a aria-label="WhatsApp" href="https://wa.me/8801522134051" target="_blank" rel="noopener" title="WhatsApp"><span class="sr">WhatsApp</span><svg viewBox="0 0 24 24" class="icon"><path d="M20 3.5A10 10 0 1 0 4 19.2L3 22l2.9-.9A10 10 0 1 0 20 3.5zM6.4 12a5.6 5.6 0 1 1 11.2 0 5.6 5.6 0 0 1-11.2 0zm8 2.6c-.4.1-1 .2-2-.2-1.8-.7-3-2.3-3.3-2.7-.3-.5-.8-1.1-.8-1.9 0-.9.5-1.3.7-1.3h.5l.4.1c.1 0 .3.1.3.3l.4 1c.1.2.1.3 0 .4l-.2.3-.2.3c-.1.2-.2.4 0 .7.2.3.7 1 1.4 1.6.9.8 1.6 1 1.8 1.1h.4l.3-.1h.3c.2 0 .3.1.4.3l.5 1.1c.1.2 0 .4-.2.5z"/></svg></a></li>
-          <li><a aria-label="Messenger" href="https://m.me/shoaib911" target="_blank" rel="noopener" title="Messenger"><span class="sr">Messenger</span><svg viewBox="0 0 24 24" class="icon"><path d="M12 2C6.5 2 2 6.1 2 11.1 2 15 4.6 18.3 8.3 19.7v2.3l2.2-1.2c.5.1 1 .1 1.5.1 5.5 0 10-4.1 10-9.1S17.5 2 12 2zm5 10.7L14 11l-3.2 1.9L7 11l4.3 4.6 3.2-1.9 2.5 2v-3z"/></svg></a></li>
-          <li><a aria-label="LinkedIn" href="https://www.linkedin.com/in/shoaib-mahmud-2383a237a" target="_blank" rel="noopener" title="LinkedIn"><span class="sr">LinkedIn</span><svg viewBox="0 0 24 24" class="icon"><path d="M6 9h3v10H6zM7.5 5.5A1.5 1.5 0 1 1 6 7a1.5 1.5 0 0 1 1.5-1.5zM18 9.5c-2 0-3 .9-3.5 1.6V9H11v10h3.5v-5.4c0-1.4.9-2.2 2.2-2.2 1.2 0 1.8.8 1.8 2.2V19H22v-5.8c0-2.8-1.5-3.7-4-3.7z"/></svg></a></li>
-          <li><a aria-label="GitHub" href="https://github.com/shoaib880" target="_blank" rel="noopener" title="GitHub"><span class="sr">GitHub</span><svg viewBox="0 0 24 24" class="icon"><path d="M12 .5A12 12 0 0 0 0 12.7c0 5.4 3.4 9.9 8.1 11.5.6.1.8-.3.8-.6v-2.2c-3.3.8-4-1.6-4-1.6-.6-1.6-1.4-2-1.4-2-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.1 0-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.2a11.1 11.1 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.7.1 3 .1 3 .8.8 1.2 1.8 1.2 3.1 0 4.6-2.7 5.6-5.3 5.9.4.4.7 1 .7 2v3c0 .3.2.7.8.6A12 12 0 0 0 24 12.7 12 12 0 0 0 12 .5z"/></svg></a></li>
-        </ul>
-      </div>
+      <p><strong>Email:</strong> <a href="mailto:2252081088@uttara.ac.bd">2252081088@uttara.ac.bd</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+8801522134051">+8801522134051</a></p>
+      <ul class="social-list only-icons">
+        <li><a href="https://www.facebook.com/share/17RALhjYdM/" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" class="icon"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3h-1.8v7A10 10 0 0 0 22 12z"/></svg></a></li>
+        <li><a href="https://www.instagram.com/shoaibm880/" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" class="icon"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm6.2-.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg></a></li>
+        <li><a href="https://x.com/shoaibm880" target="_blank" aria-label="X"><svg viewBox="0 0 24 24" class="icon"><path d="M3 3h4.7l5 6.7L18 3h3.7l-6.6 8.6L22 21h-4.7l-5.4-7.1L9 21H5.3l6.6-8.7L3 3z"/></svg></a></li>
+        <li><a href="https://www.threads.com/@shoaibm880" target="_blank" aria-label="Threads"><svg viewBox="0 0 24 24" class="icon"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm3.6 12.7c-.4 1.7-1.9 2.9-3.8 2.9-2.3 0-4.1-1.9-4.1-4.2s1.8-4.2 4.1-4.2c1.8 0 3.3 1.1 3.8 2.7-.3-.1-.7-.2-1.1-.2-1.4 0-2.5 1-2.5 2.3s1.1 2.3 2.5 2.3c.5 0 .8-.1 1.1-.3z"/></svg></a></li>
+        <li><a href="https://wa.me/8801522134051" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" class="icon"><path d="M20 3.5A10 10 0 1 0 4 19.2L3 22l2.9-.9A10 10 0 1 0 20 3.5zM6.4 12a5.6 5.6 0 1 1 11.2 0 5.6 5.6 0 0 1-11.2 0zm8 2.6c-.4.1-1 .2-2-.2-1.8-.7-3-2.3-3.3-2.7-.3-.5-.8-1.1-.8-1.9 0-.9.5-1.3.7-1.3h.5l.4.1c.1 0 .3.1.3.3l.4 1c.1.2.1.3 0 .4l-.2.3-.2.3c-.1.2-.2.4 0 .7.2.3.7 1 1.4 1.6.9.8 1.6 1 1.8 1.1h.4l.3-.1h.3c.2 0 .3.1.4.3l.5 1.1c.1.2 0 .4-.2.5z"/></svg></a></li>
+        <li><a href="https://m.me/shoaib911" target="_blank" aria-label="Messenger"><svg viewBox="0 0 24 24" class="icon"><path d="M12 2C6.5 2 2 6.1 2 11.1 2 15 4.6 18.3 8.3 19.7v2.3l2.2-1.2c.5.1 1 .1 1.5.1 5.5 0 10-4.1 10-9.1S17.5 2 12 2zm5 10.7L14 11l-3.2 1.9L7 11l4.3 4.6 3.2-1.9 2.5 2v-3z"/></svg></a></li>
+        <li><a href="https://www.linkedin.com/in/shoaib-mahmud-2383a237a" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" class="icon"><path d="M6 9h3v10H6zM7.5 5.5A1.5 1.5 0 1 1 6 7a1.5 1.5 0 0 1 1.5-1.5zM18 9.5c-2 0-3 .9-3.5 1.6V9H11v10h3.5v-5.4c0-1.4.9-2.2 2.2-2.2 1.2 0 1.8.8 1.8 2.2V19H22v-5.8c0-2.8-1.5-3.7-4-3.7z"/></svg></a></li>
+        <li><a href="https://github.com/shoaib880" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" class="icon"><path d="M12 .5A12 12 0 0 0 0 12.7c0 5.4 3.4 9.9 8.1 11.5.6.1.8-.3.8-.6v-2.2c-3.3.8-4-1.6-4-1.6-.6-1.6-1.4-2-1.4-2-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.1 0-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.2a11.1 11.1 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.7.1 3 .1 3 .8.8 1.2 1.8 1.2 3.1 0 4.6-2.7 5.6-5.3 5.9.4.4.7 1 .7 2v3c0 .3.2.7.8.6A12 12 0 0 0 24 12.7 12 12 0 0 0 12 .5z"/></svg></a></li>
+      </ul>
     </section>
   </main>
-
-  <footer class="container site-footer">
-    <p>&copy; <span id="year"></span> Shoaib Mahmud</p>
-  </footer>
-
+  <footer class="container site-footer"><p>&copy; <span id="year"></span> Shoaib Mahmud</p></footer>
   <script>
-    // Theme toggle with persistence
-    const themeToggle = document.getElementById('themeToggle');
-    const saved = localStorage.getItem('theme');
-    if(saved){ document.documentElement.setAttribute('data-theme', saved); }
-    function reflect(){ const cur = document.documentElement.getAttribute('data-theme') || 'dark'; themeToggle.textContent = cur==='dark'?'☾':'☀'; }
-    reflect();
-    themeToggle.addEventListener('click', () => {
-      const cur = document.documentElement.getAttribute('data-theme') || 'dark';
-      const next = cur === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-      reflect();
-    });
-
-    // Mobile nav toggle
-    const btn = document.querySelector('.nav-toggle');
-    const links = document.querySelector('.nav-links');
-    btn.addEventListener('click', () => {
-      const open = links.classList.toggle('open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-
-    // Typewriter
-    const phrases = ["Developer-in-training", "Linux enthusiast", "C programmer"];
-    let pi = 0, ci = 0, dir = 1, pause = 0;
-    const out = document.getElementById('typewriter');
-    function tick(){
-      const p = phrases[pi];
-      if(pause>0){ pause--; return requestAnimationFrame(tick); }
-      ci += dir;
-      out.textContent = p.slice(0, ci);
-      if(ci === p.length){ dir = -1; pause = 30; }
-      if(ci === 0 && dir === -1){ dir = 1; pi = (pi+1)%phrases.length; pause = 12; }
-      setTimeout(tick, 80);
-    }
-    tick();
-
-    // Scroll reveal with directional classes
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('revealed'); });
-    }, { threshold: 0.15 });
-    document.querySelectorAll('.reveal-left, .reveal-right, .reveal-up, .card, .projects').forEach(el => observer.observe(el));
-
-    // Year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const themeToggle=document.getElementById('themeToggle');const saved=localStorage.getItem('theme');if(saved){document.documentElement.setAttribute('data-theme',saved);}function reflect(){const cur=document.documentElement.getAttribute('data-theme')||'dark';themeToggle.textContent=cur==='dark'?'☾':'☀';}reflect();themeToggle.addEventListener('click',()=>{const cur=document.documentElement.getAttribute('data-theme')||'dark';const next=cur==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',next);localStorage.setItem('theme',next);reflect();});
+    const btn=document.querySelector('.nav-toggle');const links=document.querySelector('.nav-links');btn.addEventListener('click',()=>{const open=links.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});
+    const phrases=["Developer-in-training","Linux enthusiast","C programmer"];let pi=0,ci=0,dir=1,pause=0;const out=document.getElementById('typewriter');function tick(){const p=phrases[pi];if(pause>0){pause--;return requestAnimationFrame(tick);}ci+=dir;out.textContent=p.slice(0,ci);if(ci===p.length){dir=-1;pause=30;}if(ci===0&&dir===-1){dir=1;pi=(pi+1)%phrases.length;pause=12;}setTimeout(tick,80);}tick();
+    const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('revealed');});},{threshold:0.15});document.querySelectorAll('.reveal-left,.reveal-right,.reveal-up,.card,.projects').forEach(el=>observer.observe(el));
+    document.getElementById('year').textContent=new Date().getFullYear();
   </script>
 </body>
 </html>
