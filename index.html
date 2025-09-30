@@ -1,272 +1,97 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark" class="no-js">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shoaib Mahmud — Portfolio (V2)</title>
-  <meta name="description" content="Shoaib Mahmud — CSE student. Rainbow 3D portfolio that feels alive." />
+  <title>Shoaib Mahmud — Links & Contacts</title>
+  <meta name="description" content="All my links, contact info, and skills in one clean card." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="images/logo.png" />
 </head>
 <body>
-  <!-- Animated rainbow backdrop + floating particles -->
-  <div class="bg-rainbow"></div>
-  <div class="bg-particles" aria-hidden="true">
-    <span style="--i:0"></span><span style="--i:1"></span><span style="--i:2"></span>
-    <span style="--i:3"></span><span style="--i:4"></span><span style="--i:5"></span>
-    <span style="--i:6"></span><span style="--i:7"></span><span style="--i:8"></span>
-    <span style="--i:9"></span><span style="--i:10"></span><span style="--i:11"></span>
-  </div>
+  <!-- Ambient animated background -->
+  <div class="bg"></div>
 
-  <header class="container site-header">
-    <nav class="nav" data-tilt data-depth="8">
-      <a class="brand" href="#top" aria-label="Home">
-        <img class="brand-logo" src="images/logo.png" alt="SM logo" />
-        <span class="brand-text">Shoaib<span class="brand-accent">Mahmud</span></span>
-      </a>
-      <div class="nav-right">
-        <button id="themeToggle" class="btn tiny ghost" aria-label="Toggle theme">☾</button>
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#about">Summary</a></li>
-        <li><a href="#education">Education (3D)</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <section id="top" class="hero">
-      <div class="hero-text tilt-wrap">
-        <div class="hero-card tilt-card tilt-shadow" data-tilt data-depth="30">
-          <h1 class="name rainbow-stroke">Shoaib Mahmud</h1>
-          <p class="typed">
-            <span id="typewriter"></span><span class="cursor">|</span>
-          </p>
-          <p class="tagline">CSE student (2nd semester). Linux explorer. Building things & learning fast.</p>
-          <ul class="hero-badges">
-            <li class="hb">Ubuntu</li>
-            <li class="hb">C</li>
-            <li class="hb">CSS</li>
-            <li class="hb">Node.js</li>
-            <li class="hb">MySQL</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="hero-photo tilt-wrap">
-        <div class="photo-frame tilt-card tilt-glow" data-tilt data-depth="18">
-          <img src="images/shoaib.webp" alt="Portrait of Shoaib Mahmud" onerror="this.src='images/placeholder.svg'"/>
-        </div>
-      </div>
-    </section>
+  <!-- Header with logo -->
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Home">
+      <img src="images/logo.png" alt="SM Logo" onerror="this.style.display='none'">
+    </a>
+    <button id="themeToggle" class="btn-ghost" aria-label="Toggle theme">☾</button>
   </header>
 
-  <main class="container">
-    <section id="about" class="card reveal-right tilt-card" data-tilt>
-      <h2>Career Summary</h2>
-      <p>
-        Motivated <strong>2nd-semester</strong> CSE student at Uttara University. Focused on C programming,
-        algorithms, and system fundamentals. I like clean architecture, teamwork, and Linux-driven development workflows.
-      </p>
-    </section>
-
-    <!-- 3D Education Scene -->
-    <section id="education" class="edu-3d reveal-left">
-      <h2 class="edu-title">Education — 3D Stack</h2>
-
-      <div class="edu-stage" aria-label="3D education stack" role="list">
-        <!-- Layer 1 -->
-        <article class="edu-card layer-1 tilt-card" data-tilt data-depth="16" role="listitem">
-          <div class="layer-face">
-            <h3>B.Sc. in Computer Science &amp; Engineering</h3>
-            <p class="muted">Uttara University — <strong>Currently 2nd Semester</strong> • Expected Graduation: 2029</p>
-            <p class="mini">Recent: Data Structures, Discrete Math, Computer Fundamentals</p>
-          </div>
-        </article>
-        <!-- Layer 2 -->
-        <article class="edu-card layer-2 tilt-card" data-tilt data-depth="12" role="listitem">
-          <div class="layer-face">
-            <h3>HSC (Science) <span class="badge gpa">GPA 5.00/5.00</span></h3>
-            <p class="muted">Bangabandhu Govt. College — 2024</p>
-          </div>
-        </article>
-        <!-- Layer 3 -->
-        <article class="edu-card layer-3 tilt-card" data-tilt data-depth="8" role="listitem">
-          <div class="layer-face">
-            <h3>SSC (Science) <span class="badge gpa">GPA 5.00/5.00</span></h3>
-            <p class="muted">Satair High School, Faridpur — 2022</p>
-          </div>
-        </article>
-
-        <!-- Ambient rotating rainbow ring -->
-        <div class="edu-ring" aria-hidden="true"></div>
-      </div>
-      <p class="edu-hint">Tip: move your mouse or tilt your phone — the stack responds.</p>
-    </section>
-
-    <section id="skills" class="card reveal-right tilt-card" data-tilt>
-      <h2>Technical Skills</h2>
-      <div class="skill-groups">
-        <div class="skill-group">
-          <h3>🧠 Programming</h3>
-          <div class="badges">
-            <span class="badge pill">C</span>
-            <span class="badge pill">Python</span>
-            <span class="badge pill">HTML</span>
-            <span class="badge pill">CSS</span>
-            <span class="badge pill">Node.js</span>
-            <span class="badge pill">MySQL</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h3>🛠️ Tools</h3>
-          <div class="badges">
-            <span class="badge pill">Git &amp; GitHub</span>
-            <span class="badge pill">VS Code</span>
-            <span class="badge pill">Android Studio</span>
-            <span class="badge pill">Godot</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h3>💻 Operating Systems</h3>
-          <div class="badges">
-            <span class="badge pill">Ubuntu</span>
-            <span class="badge pill">Fedora</span>
-            <span class="badge pill">Kali</span>
-            <span class="badge pill">Zorin</span>
-            <span class="badge pill">Linux Mint</span>
-            <span class="badge pill">Windows 11</span>
-          </div>
+  <!-- Main card -->
+  <main class="wrap">
+    <section class="card">
+      <div class="avatar-ring">
+        <div class="avatar">
+          <!-- If you have a profile image, drop it here; otherwise initials render -->
+          <span class="initials">SM</span>
         </div>
       </div>
-    </section>
 
-    <section id="projects" class="reveal-left">
-      <h2>Projects</h2>
-      <div class="grid projects">
-        <article class="project-card tilt-card" data-tilt data-depth="10">
-          <div class="pc-head"><div class="pc-icon">🎮</div><h3>Android-based Game</h3></div>
-          <p>Leading a 4-person team to design and code an Android game. Responsible for scope, architecture, and gameplay logic in C.</p>
-        </article>
-        <article class="project-card tilt-card" data-tilt data-depth="10">
-          <div class="pc-head"><div class="pc-icon">📚</div><h3>Coursework Foundations</h3></div>
-          <p>C assignments, problem-solving, calculus, linear algebra, English writing projects.</p>
-        </article>
-        <article class="project-card tilt-card" data-tilt data-depth="10">
-          <div class="pc-head"><div class="pc-icon">🤝</div><h3>ML Club</h3></div>
-          <p>Active member of Uttara University Machine Learning Club (since Aug 2025).</p>
-        </article>
+      <h1 class="title">Shoaib Mahmud</h1>
+      <p class="subtitle">CSE Student • Developer in training</p>
+
+      <div class="contact-grid">
+        <a class="contact chip" href="mailto:2252081088@uttara.ac.bd">📧 2252081088@uttara.ac.bd</a>
+        <a class="contact chip" href="tel:+8801522134051">📞 +880 15 22 134 051</a>
       </div>
-    </section>
 
-    <section id="contact" class="card reveal-right tilt-card" data-tilt>
-      <h2>Contact</h2>
-      <p><strong>Email:</strong> <a href="mailto:2252081088@uttara.ac.bd">2252081088@uttara.ac.bd</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+8801522134051">+8801522134051</a></p>
-      <ul class="social-list only-icons">
-        <li><a href="https://www.facebook.com/share/17RALhjYdM/" target="_blank" aria-label="Facebook" rel="noopener">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3h-1.8v7A10 10 0 0 0 22 12z"/></svg>
-        </a></li>
-        <li><a href="https://www.instagram.com/shoaibm880/" target="_blank" aria-label="Instagram" rel="noopener">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm6.2-.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg>
-        </a></li>
-        <li><a href="https://x.com/shoaibm880" target="_blank" aria-label="X" rel="noopener">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M3 3h4.7l5 6.7L18 3h3.7l-6.6 8.6L22 21h-4.7l-5.4-7.1L9 21H5.3l6.6-8.7L3 3z"/></svg>
-        </a></li>
-        <li><a href="https://www.threads.com/@shoaibm880" target="_blank" aria-label="Threads" rel="noopener">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm3.6 12.7c-.4 1.7-1.9 2.9-3.8 2.9-2.3 0-4.1-1.9-4.1-4.2s1.8-4.2 4.1-4.2c1.8 0 3.3 1.1 3.8 2.7-.3-.1-.7-.2-1.1-.2-1.4 0-2.5 1-2.5 2.3s1.1 2.3 2.5 2.3c.5 0 .8-.1 1.1-.3z"/></svg>
-        </a></li>
-        <li><a href="https://wa.me/8801522134051" target="_blank" aria-label="WhatsApp" rel="noopener">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M20 3.5A10 10 0 1 0 4 19.2L3 22l2.9-.9A10 10 0 1 0 20 3.5zM6.4 12a5.6 5.6 0 1 1 11.2 0 5.6 5.6 0 0 1-11.2 0zm8 2.6c-.4.1-1 .2-2-.2-1.8-.7-3-2.3-3.3-2.7-.3-.5-.8-1.1-.8-1.9 0-.9.5-1.3.7-1.3h.5l.4.1c.1 0 .3.1.3.3l.4 1c.1.2.1.3 0 .4l-.2.3-.2.3c-.1.2-.2.4 0 .7.2.3.7 1 1.4 1.6.9.8 1.6 1 1.8 1.1h.4l.3-.1h.3c.2 0 .3.1.4.3l.5 1.1c.1.2 0 .4-.2.5z"/></svg>
-        </a></li>
-        <li><a href="https://m.me/shoaib911" target="_blank" aria-label="Messenger" rel="noopener">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M12 2C6.5 2 2 6.1 2 11.1 2 15 4.6 18.3 8.3 19.7v2.3l2.2-1.2c.5.1 1 .1 1.5.1 5.5 0 10-4.1 10-9.1S17.5 2 12 2zm5 10.7L14 11l-3.2 1.9L7 11l4.3 4.6 3.2-1.9 2.5 2v-3z"/></svg>
-        </a></li>
-        <li><a href="https://www.linkedin.com/in/shoaib-mahmud-2383a237a" target="_blank" aria-label="LinkedIn" rel="noopener">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M6 9h3v10H6zM7.5 5.5A1.5 1.5 0 1 1 6 7a1.5 1.5 0 0 1 1.5-1.5zM18 9.5c-2 0-3 .9-3.5 1.6V9H11v10h3.5v-5.4c0-1.4.9-2.2 2.2-2.2 1.2 0 1.8.8 1.8 2.2V19H22v-5.8c0-2.8-1.5-3.7-4-3.7z"/></svg>
-        </a></li>
-        <li><a href="https://github.com/shoaib880" target="_blank" aria-label="GitHub" rel="noopener">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M12 .5A12 12 0 0 0 0 12.7c0 5.4 3.4 9.9 8.1 11.5.6.1.8-.3.8-.6v-2.2c-3.3.8-4-1.6-4-1.6-.6-1.6-1.4-2-1.4-2-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.1 0-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.2a11.1 11.1 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.7.1 3 .1 3 .8.8 1.2 1.8 1.2 3.1 0 4.6-2.7 5.6-5.3 5.9.4.4.7 1 .7 2v3c0 .3.2.7.8.6A12 12 0 0 0 24 12.7 12 12 0 0 0 12 .5z"/></svg>
-        </a></li>
-      </ul>
+      <hr class="soft" />
+
+      <div class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="pill-row">
+          <span class="pill">C</span>
+          <span class="pill">Python</span>
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">MySQL</span>
+          <span class="pill alt">Git & GitHub</span>
+          <span class="pill alt">VS Code</span>
+          <span class="pill alt">Ubuntu</span>
+        </div>
+      </div>
+
+      <div class="links">
+        <h2 class="section-title">Socials</h2>
+        <ul class="icons">
+          <li><a class="icon-btn" href="https://www.facebook.com/share/17RALhjYdM/" target="_blank" rel="noopener" aria-label="Facebook">󰈌</a></li>
+          <li><a class="icon-btn" href="https://www.instagram.com/shoaibm880/" target="_blank" rel="noopener" aria-label="Instagram">󰟜</a></li>
+          <li><a class="icon-btn" href="https://x.com/shoaibm880" target="_blank" rel="noopener" aria-label="X (Twitter)">✕</a></li>
+          <li><a class="icon-btn" href="https://www.threads.com/@shoaibm880" target="_blank" rel="noopener" aria-label="Threads">@</a></li>
+          <li><a class="icon-btn" href="https://wa.me/8801522134051" target="_blank" rel="noopener" aria-label="WhatsApp">󰖟</a></li>
+          <li><a class="icon-btn" href="https://m.me/shoaib911" target="_blank" rel="noopener" aria-label="Messenger">󰈎</a></li>
+          <li><a class="icon-btn" href="https://www.linkedin.com/in/shoaib-mahmud-2383a237a" target="_blank" rel="noopener" aria-label="LinkedIn">in</a></li>
+          <li><a class="icon-btn" href="https://github.com/shoaib880" target="_blank" rel="noopener" aria-label="GitHub">󰊤</a></li>
+        </ul>
+      </div>
+
+      <footer class="foot">
+        <span>© <span id="year"></span> SM</span>
+        <span class="dot">•</span>
+        <span class="tiny">Built with HTML & CSS</span>
+      </footer>
     </section>
   </main>
 
-  <footer class="container site-footer"><p>&copy; <span id="year"></span> Shoaib Mahmud</p></footer>
-
-  <!-- ===== JavaScript (inline, no libraries) ===== -->
   <script>
-    // Mark JS enabled to allow CSS fallbacks
-    document.documentElement.classList.remove('no-js');
-
-    // Theme toggle + remember
-    const themeToggle = document.getElementById('themeToggle');
+    // Theme toggle (no libraries)
+    const btn = document.getElementById('themeToggle');
     const saved = localStorage.getItem('theme');
     if (saved) document.documentElement.setAttribute('data-theme', saved);
-    const reflectTheme = () => {
+    const reflect = () => {
       const cur = document.documentElement.getAttribute('data-theme') || 'dark';
-      themeToggle.textContent = cur === 'dark' ? '☾' : '☀';
+      btn.textContent = cur === 'dark' ? '☾' : '☀';
     };
-    reflectTheme();
-    themeToggle.addEventListener('click', () => {
+    reflect();
+    btn.addEventListener('click', () => {
       const cur = document.documentElement.getAttribute('data-theme') || 'dark';
       const next = cur === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', next);
       localStorage.setItem('theme', next);
-      reflectTheme();
-    });
-
-    // Mobile nav
-    const btn = document.querySelector('.nav-toggle');
-    const links = document.querySelector('.nav-links');
-    btn.addEventListener('click', () => {
-      const open = links.classList.toggle('open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-
-    // Typewriter
-    const phrases = ["Developer-in-training","Linux enthusiast","C programmer","Rainbow 3D enjoyer"];
-    let pi=0, ci=0, dir=1, pause=0;
-    const out = document.getElementById('typewriter');
-    function tick(){
-      const p = phrases[pi];
-      if (pause>0){ pause--; return requestAnimationFrame(tick); }
-      ci += dir; out.textContent = p.slice(0,ci);
-      if (ci===p.length){ dir=-1; pause=30; }
-      if (ci===0 && dir===-1){ dir=1; pi=(pi+1)%phrases.length; pause=12; }
-      setTimeout(tick, 80);
-    } tick();
-
-    // Reveal on scroll
-    const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('revealed'); });
-    }, {threshold:0.15});
-    document.querySelectorAll('.reveal-left,.reveal-right,.reveal-up,.card,.projects,.edu-3d,.tilt-card').forEach(el => observer.observe(el));
-
-    // Mouse tilt (parallax)
-    const tiltables = document.querySelectorAll('[data-tilt]');
-    const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
-    function handleTilt(e){
-      const cx = window.innerWidth / 2;
-      const cy = window.innerHeight / 2;
-      const dx = (e.clientX - cx) / cx;
-      const dy = (e.clientY - cy) / cy;
-      tiltables.forEach(el => {
-        const depth = Number(el.dataset.depth || 12);
-        const rx = clamp(dy * depth, -depth, depth);
-        const ry = clamp(-dx * depth, -depth, depth);
-        el.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg) translateZ(0)`;
-      });
-    }
-    window.addEventListener('mousemove', handleTilt);
-
-    // Float particles a bit with mouse
-    const particles = document.querySelector('.bg-particles');
-    window.addEventListener('mousemove', (e)=>{
-      particles.style.setProperty('--mx', (e.clientX / window.innerWidth));
-      particles.style.setProperty('--my', (e.clientY / window.innerHeight));
+      reflect();
     });
 
     // Year
